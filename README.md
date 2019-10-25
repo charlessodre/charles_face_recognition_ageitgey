@@ -11,18 +11,20 @@ https://github.com/ageitgey/face_recognition
 ## Informação sobre os arquivos:
 
 face_recognize_min_draw_box.py -  Esse programa realiza o reconhecimento dos rostos  nas imagens que estão no diretório  “source_img/unknown” e salva a imagem com os rostos identificados no diretório “source_img/output”. <br/>
-face_recognize_webcam.py - Esse programa realiza o reconhecimento dos rostos identificados na Webcam. Ele não salva as imagens.<br>
+
+face_recognize_webcam.py - Esse programa realiza o reconhecimento dos rostos identificados na Webcam. Ele não salva as imagens.<br/>
+
 helper.py - Funções de suporte diversas.<br/>
 
 ## Estrutura dos diretórios:
 
 source_img/known_people - Neste diretório ficam as imagens das pessoas conhecidas. A imagem deve conter somente o rosto da pessoa (um rosto). O nome do arquivo da imagem deve ser o nome da pessoa seguido do caractere "#". Todo o texto que estiver antes do "#" será o nome utilizado para a classificação do rosto.<br>
-Exemplo nome do arquivo.: 
-	charles#.jpeg
-	charles_sodre#.jpeg
-	charles_sodre#_001.jpeg
+Exemplo nome do arquivo: 
+	charles#.jpeg<br/>
+	charles_sodre#.jpeg<br/>
+	charles_sodre#_001.jpeg<br/>
 
-<br/>
+
 
 source_img/unknown - Neste diretório ficam as imagens das pessoas desconhecidas. A imagem pode conter vários rostos, pois verificar se existe algum rosto conhecido (informado no diretório source_img/known_people).<br/>
 
