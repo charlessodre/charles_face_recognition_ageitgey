@@ -19,7 +19,7 @@ helper.py - Funções de suporte diversas.<br/>
 ## Estrutura dos diretórios:
 
 source_img/known_people - Neste diretório ficam as imagens das pessoas conhecidas. A imagem deve conter somente o rosto da pessoa (um rosto). O nome do arquivo da imagem deve ser o nome da pessoa seguido do caractere "#". Todo o texto que estiver antes do "#" será o nome utilizado para a classificação do rosto.<br>
-Exemplo nome do arquivo: 
+Exemplo nome do arquivo: <br/>
 	charles#.jpeg<br/>
 	charles_sodre#.jpeg<br/>
 	charles_sodre#_001.jpeg<br/>

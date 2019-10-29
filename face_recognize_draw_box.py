@@ -44,6 +44,10 @@ def resize_images(list_images, width):
         image_resized.save(img)
 
 
+helper.make_dirs(path_out_images, True)
+helper.make_dirs(path_known_images, True)
+helper.make_dirs(path_unknow_images, True)
+
 list_known_images = helper.get_files_dir(path_known_images, image_extension)
 list_images_unknow = helper.get_files_dir(path_unknow_images, image_extension)
 
