@@ -10,9 +10,9 @@
 
 ## Informação sobre os arquivos:
 
-<p> face_recognize_min_draw_box.py -  Esse programa realiza o reconhecimento dos rostos  nas imagens que estão no diretório  “source_img/unknown” e salva a imagem com os rostos identificados no diretório “source_img/output”.</p>
+<p> face_recognition_min_draw_box.py -  Esse programa realiza o reconhecimento dos rostos  nas imagens que estão no diretório  “source_img/unknown” e salva a imagem com os rostos identificados no diretório “source_img/output”.</p>
 
-<p> face_recognize_webcam.py - Esse programa realiza o reconhecimento dos rostos identificados na Webcam. Ele não salva as imagens.</p>
+<p> face_recognition_webcam.py - Esse programa realiza o reconhecimento dos rostos identificados na Webcam. Ele não salva as imagens.</p>
 
 <p> helper.py - Funções de suporte diversas.</p>
 
