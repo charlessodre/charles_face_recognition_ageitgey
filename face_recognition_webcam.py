@@ -8,7 +8,7 @@ path_out_images = 'source_img/output/'
 path_known_images = 'source_img/known_people/'
 path_unknow_images = 'source_img/unknown/'
 image_extension = "*.jpeg"
-
+save_video = True
 
 def get_list_face_encodings_and_names(list_known_images, sep="#"):
     '''
@@ -41,6 +41,16 @@ video_capture = cv2.VideoCapture(0)
 if not video_capture.isOpened():
     print("Could not open webcam!")
     exit()
+
+# Default resolutions of the frame are obtained.The default resolutions are system dependent.
+# We convert the resolutions from float to integer.
+frame_width = int(video_capture.get(3))
+frame_height = int(video_capture.get(4))
+
+# Define the codec and create VideoWriter object
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out_webcam = cv2.VideoWriter('output_webcam.avi',fourcc, 20.0, (frame_width,frame_height))
+
 
 face_names = []
 process_this_frame = True
@@ -112,10 +122,16 @@ while True:
         # Display the resulting image
     cv2.imshow('Video', frame)
 
+    if save_video:
+        # write the flipped frame
+        out_webcam.write(frame)
+
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 # Release handle to the webcam
 video_capture.release()
+out_webcam.release()
+
 cv2.destroyAllWindows()
