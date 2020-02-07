@@ -31,3 +31,9 @@
 
 <p> source_img/output - Neste diretório é onde será salva a imagem informando se reconheceu ou não o rosto. Os rostos que não possuírem um retângulo significa que o não foi identificado como um rosto.</p>
 
+## Exemplo de faces reconhecidas:
+
+![Exemplo de faces reconhecidas](exemplo.gif)
+
+
+
