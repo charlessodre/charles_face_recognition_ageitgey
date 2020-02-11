@@ -10,26 +10,28 @@
 
 ## Informação sobre os arquivos:
 
-<p> face_recognition_min_draw_box.py -  Esse programa realiza o reconhecimento dos rostos nas imagens que estão no diretório  “source_img/unknown” e salva a imagem com os rostos identificados no diretório “source_img/output”.</p>
+<p> <b>face_recognition_min_draw_box.py </b> -  Esse programa realiza o reconhecimento dos rostos nas imagens que estão no diretório  “source_img/unknown” e salva a imagem, com os rostos identificados, no diretório “source_img/output”. Ele executa em batch o reconhecimento dos rostos . </p>
 
-<p> face_recognition_webcam.py - Esse programa realiza o reconhecimento dos rostos identificados na Webcam. Ele pode salvar as imagens, se necessário.</p>
+<p>  <b>face_recognition_webcam.py </b> - Esse programa realiza o reconhecimento dos rostos identificados na Webcam. Ele pode salvar as imagens, se necessário.</p>
 
-<p> helper.py - Funções de suporte diversas.</p>
+<p>  <b>helper.py </b> - Funções de suporte diversas.</p>
+
+<p> Obs.: Os programas  <b>face_recognition_min_draw_box.py</b>  e  <b>face_recognition_webcam.py</b>  são independentes. Eles podem ser executados separadamente. </p>
 
 ## Estrutura dos diretórios:
 
-<p> source_img/known_people - Neste diretório ficam as imagens das pessoas conhecidas. A imagem deve conter somente o rosto da pessoa (um rosto). O nome do arquivo da imagem deve ser o nome da pessoa seguido do caractere "#". Todo o texto que estiver antes do "#" será o nome utilizado para a classificação do rosto.</p>
+<p> <b>source_img/known_people </b>- Neste diretório ficam as imagens das pessoas conhecidas. A imagem deve conter somente o rosto da pessoa (um rosto). O nome do arquivo da imagem deve ser o nome da pessoa seguido do caractere "#". Todo o texto que estiver antes do "#" será o nome utilizado para a classificação do rosto.</p>
 <p> Exemplo nome do arquivo válidos: </p>
-	<p> charles#.jpeg</p>
-	<p> charles_sodre#.jpeg</p>
-	<p> charles_sodre#_001.jpeg</p>
+	<p> <b>charles#.jpeg</b></p>
+	<p> <b>charles_sodre#.jpeg</b></p>
+	<p> <b>charles_sodre#_001.jpeg</b></p>
 
 
 
-<p> source_img/unknown - Neste diretório ficam as imagens das pessoas desconhecidas. A imagem pode conter vários rostos, pois será verificado se existe algum rosto conhecido (informado no diretório source_img/known_people).</p>
+<p> <b>source_img/unknown </b>- Neste diretório ficam as imagens dos rostos desconhecidos. A imagem pode conter vários rostos, pois será verificado se existe algum rosto conhecido (informado no diretório source_img/known_people).</p>
 
 
-<p> source_img/output - Neste diretório é onde será salva a imagem informando se reconheceu ou não o rosto. Os rostos que não possuírem um retângulo significa que o não foi identificado como um rosto.</p>
+<p> <b>source_img/output </b>- Neste diretório será salva a imagem informando se reconheceu ou não o rosto. Os rostos que não possuírem um retângulo significa que o algoritmo não identificou como um rosto válido.</p>
 
 ## Exemplo de faces reconhecidas:
 
